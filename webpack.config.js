@@ -63,7 +63,7 @@ const isProd = (process.env.NODE_ENV === 'production');
 
 //add all external css to be added in our index.html--> like as if it's .angular-cli.json
 const styles = [
-  "./src/styles.scss"
+  "./src/assets/base.less"
 ];
 
 //we add all our external scripts we want to load externally, like inserting in our index.html --> like as if it's .angular-cli.json
@@ -266,7 +266,7 @@ module.exports = {
     "extensions": [
       ".ts",
       ".js",
-      ".scss",
+      ".less",
       ".json"
     ],
     "aliasFields": [],

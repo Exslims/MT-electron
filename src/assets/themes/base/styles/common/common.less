@@ -1,0 +1,75 @@
+@import "colors.less";
+@import "fonts.less";
+
+* {
+    box-sizing: border-box;
+
+    &:before,
+    &:after {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    .tss-font-regular();
+    color: @main-text-color;
+    background-color: @primary-background-color;
+    //opacity: 0;
+}
+
+._margin_no {
+    margin: 0 !important;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+        cursor: pointer;
+        text-decoration: none;
+        outline: none;
+    }
+
+}
+
+._page-limiter {
+    max-width: 1180px;
+    margin: auto;
+}
+
+button {
+    padding: 0;
+}
+
+._hidden {
+    display: none !important;
+}
+
+h3, h1 {
+    margin: 40px 0 20px;
+}
+
+.__toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.__search, .__operations {
+    display: flex;
+    align-items: center;
+}
